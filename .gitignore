@@ -8,9 +8,11 @@ code/ai-spingboot/target/
 code/ai-spingboot/*.log
 code/ai-vue/*.log
 
-# 教程课件资料（原作者的资料，不入库）
+# 教程课件与冗余资料（不入库）
 课件.md
 项目样式.md
+code/相关依赖/
+code/style.css
 
 # 系统文件
 .DS_Store
