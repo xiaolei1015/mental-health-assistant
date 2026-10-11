@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/mental_health_assistant?useSSL=false&serverTimezone=UTC
+    username: root
+    password: 123456
+
+  ai:
+    openai:
+      chat:
+        options:
+          model: deepseek-ai/DeepSeek-V3
+          tool-calling:
+            enabled: true
+        completions-path: /v1/chat/completions
+      api-key: sk-在这里填入你自己的硅基流动密钥  #去 https://siliconflow.cn 申请，勿把真实密钥提交到仓库
+      base-url: https://api.siliconflow.cn
+# 服务器配置
+server:
+  port: 1236
+
+# JWT配置
+jwt:
+  secret: MySecretKeyForJWT2025!@#$%^&*()_+SecureKeyHere
+  expiration: 86400000  # 24小时（毫秒）
+  refresh-expiration: 604800000  # 7天（毫秒）
+  header: Authorization  # token头部名称
+  token-prefix: "Bearer "  # token前缀
+

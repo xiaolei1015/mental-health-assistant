@@ -1,0 +1,17 @@
+# 大文件安装包（node 安装程序等），体积过大不入库
+code/node环境/
+
+# 依赖与构建产物（可随时重新安装/构建）
+code/ai-vue/node_modules/
+code/ai-vue/dist/
+code/ai-spingboot/target/
+code/ai-spingboot/*.log
+code/ai-vue/*.log
+
+# 教程课件资料（原作者的资料，不入库）
+课件.md
+项目样式.md
+
+# 系统文件
+.DS_Store
+Thumbs.db
