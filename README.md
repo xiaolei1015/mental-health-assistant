@@ -27,12 +27,13 @@
 ├── code
 │   ├── ai-spingboot   # 后端（Spring Boot）
 │   └── ai-vue         # 前端（Vue 3）
+├── sql                # 数据库初始化脚本（表结构 + 演示数据）
 └── 功能截图            # 各功能页面截图
 ```
 
 ## 运行方式
 
-1. 配置 MySQL（数据库名 `mental_health_assistant`），在后端 `application.yml` 中填入数据库账号与 [硅基流动](https://siliconflow.cn) 的 API Key
+1. 创建数据库 `mental_health_assistant`（utf8mb4），导入 [`sql/mental_health_assistant.sql`](./sql/mental_health_assistant.sql)（含全部表结构与演示数据），并在 `application.yml` 中填入数据库账号与 [硅基流动](https://siliconflow.cn) 的 API Key
 2. 后端：JDK 17，在 `code/ai-spingboot` 下执行 `./mvnw spring-boot:run`（端口 1236）
 3. 前端：在 `code/ai-vue` 下执行 `npm install && npm run dev`
 4. 浏览器访问前端开发服务器地址即可
